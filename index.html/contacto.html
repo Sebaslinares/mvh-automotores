@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVH Automotores 2</title>
+    <title>MVH Automotores </title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="mvhlogo.png">
 </head>
 
 <body>
     <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="img/mvhlogo.png" alt="Logo">
+            <img class="header__logo" src="img/mvhlogo22.png" alt="Logo">
         </a>
 
     </header>
@@ -22,78 +23,82 @@
     <nav class="navegacion">
         <a class="navegacion__enlace " href="index.html">Vehiculos</a>
         <a class="navegacion__enlace" href="nosotros.html"><b>Nosotros</b</a>
-        <a class="navegacion__enlace navegacion__enlace--activo" href="contacto.html"><b>Contacto</b></a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="contacto.html"><b>Contacto</b></a>
 
     </nav>
+
     <main class="contenedor">
         <h1>Contacto</h1>
         <section>
-            <form class="formulario">
+            <form action="https://formsubmit.co/mvhautomotores2021@gmail.com" method="POST"
+                class="formulario">
                 <fieldset>
                     <legend>Contacta con nosotros llenando todos los campos</legend>
                     <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre</label>
-                        <input class="input-text"type="text" placeholder="Tu Nombre">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div>
+
+                            <label>Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Telefono">
+                        </div>
+                        <div class="campo">
+
+                            <label>Email</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+
+                        <label for="dropdown" id="model">Selecciona la marca</label>
+
+                        <select id="dropdown">
+                            <option value="Model_K">KIA</option>
+                            <option value="Model_T">TOYOTA</option>
+                            <option value="Model_S">SUZUKI</option>
+                            <option value="Model_H">HYUNDAI</option>
+                            <option value="Model_M">MERCEDES-BENZ</option>
+
+                        </select>
+                        <br>
+                        <br>
+                        <label for="Model_Color" id="Model_Color"> <b>Color</b></label>
+                        <br>
+                        <input id="Model_Color" type="radio" id="black" name="color" value="white">
+                        <label for="Model_Color">Negro</label>
+                        <br>
+                        <input id="Model_Color" type="radio" id="black" name="color" value="white">
+                        <label for="Model_Color">Blanco</label>
+                        <br>
+                        <input id="Model_Color" type="radio" id="black" name="color" value="white">
+                        <label for="Model_Color">Gris</label>
+                        <br>
+                        <input id="Model_Color" type="radio" id="black" name="color" value="white">
+                        <label for="Model_Color">Rojo</label>
+                        <br>
+                        <input id="Model_Color" type="radio" id="black" name="color" value="white">
+                        <label for="Model_Color">Azul</label>
+                        <br>
+                        <br>
+                        <label for="features"> <b>Caracteristicas</b> </label>
+                        <br>
+                        <input id="checkbox" type="checkbox" name="features" value="Caja Mecanica/Caja Automatica">
+                        <label for="checkbox"> Camioneta(Caja Mecanica/Caja Automatica) </label>
+                        <br>
+                        <input id="checkbox" type="checkbox" name="features" value="Caja Mecanica/Caja Automatica">
+                        <label for="checkbox"> Auto(Caja Mecanica/Caja Automatica) </label>
+
+
+                        <div class="campo">
+
+                            <label>Mensaje</label>
+                            <textarea></textarea>
+                        </div>
                     </div>
-
-                    <div>
-
-                        <label>Telefono</label>
-                        <input class="input-text" type="tel" placeholder="Tu Telefono">
-                    </div>
-                    <div class="campo">
-
-                        <label>Email</label>
-                        <input class="input-text" type="email" placeholder="Tu Email">
-                    </div>
-                    
-                    <label for="dropdown" id="model">Selecciona el modelo</label>
-
-                    <select id="dropdown">
-                        <option value="Model_K">Modelo KIA</option>
-                        <option value="Model_T">Modelo TOYOTA</option>
-                        <option value="Model_S">Modelo SUZUKI</option>
-                        <option value="Model_H">Modelo HYUNDAI</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="Model_Color" id="Model_Color"> <b>Color</b></label>
-                    <br>
-                    <input id="Model_Color" type="radio" id="black" name="color" value="white">
-                    <label for="Model_Color">Negro</label>
-                    <br>
-                    <input id="Model_Color" type="radio" id="black" name="color" value="white">
-                    <label for="Model_Color">Blanco</label>
-                    <br>
-                    <input id="Model_Color" type="radio" id="black" name="color" value="white">
-                    <label for="Model_Color">Gris</label>
-                    <br>
-                    <input id="Model_Color" type="radio" id="black" name="color" value="white">
-                    <label for="Model_Color">Rojo</label>
-                    <br>
-                    <input id="Model_Color" type="radio" id="black" name="color" value="white">
-                    <label for="Model_Color">Azul</label>
-                    <br>
-                    <br>
-                    <label for="features"> <b>Caracteristicas</b> </label>
-                    <br>
-                    <input id="checkbox" type="checkbox" name="features" value="Caja Mecanica/Caja Automatica">
-                    <label for="checkbox"> Camioneta(Caja Mecanica/Caja Automatica) </label>
-                    <br>
-                    <input id="checkbox" type="checkbox" name="features" value="Caja Mecanica/Caja Automatica">
-                    <label for="checkbox"> Auto(Caja Mecanica/Caja Automatica) </label>
-
-
-                    <div class="campo">
-
-                        <label>Mensaje</label>
-                        <textarea></textarea>
-                    </div>
-                </div>
                     <div class="Alineacion-derecha flex">
                         <input class="boton w-100" type="submit" value="Enviar">
-                    </div>
+                    </div>  <!--Formulario de contacto Funcional proximamente-->
 
 
                 </fieldset>
@@ -102,10 +107,51 @@
         </section>
 
 
+
     </main>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    
+    
+    </div>
+    <script src="js/wha.js"></script>
+
     <footer class="footer">
         <p class="footer__texto">
             MVH Automotores-Todos los derechos reservados 2021.
+            <!--Sebastian Linares-->
         </p>
     </footer>
 </body>
